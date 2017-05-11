@@ -29,3 +29,8 @@ func dosyayi_kapat(dosya string) {
 func bellegi_temizle() {
 	fmt.Println("Ön bellek temizleniyor")
 }
+
+//defer genellikle panic oluşma hallerinde de ele alınır.
+//panic durumlarında defer ile işaret edilen fonksiyon veya fonksiyon bloğu
+//otomatik olarak çalışır. try...catch...finally'deki finally gibi işlem görür
+// diyebiliriz.
