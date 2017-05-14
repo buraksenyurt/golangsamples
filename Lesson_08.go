@@ -1,6 +1,7 @@
 /*
  Lesson_08
 	Temel struct kullanımı
+	ve metodlar
 */
 package main
 
@@ -38,6 +39,9 @@ func main() {
 	for _, vehicle := range some_vehicles {
 		vehicle.move(-3, 4, 10) // some_vehicles slice'ı içerisindeki tüm Vehicle nesneleri üzerinden move metodunu çağırıyoruz
 	}
+
+	var motto word = "it's a lovely day"  // word aslında string türünden bir type
+	fmt.Println(motto.write_with_space()) // word tipine eklediğimiz(dolayısıyla string türüne) write_with_space metodunu kullandık
 }
 
 // fonksiyonlara struct tipini pointer üzerinden aktardık
@@ -61,4 +65,16 @@ type Vehicle struct {
 // Bu metod Vehicle tipinden yapılara uygulanabiliyor
 func (vehicle Vehicle) move(x, y, z int) {
 	fmt.Printf("%s, (%d:%d:%d) lokasyonuna gidiyor\n", vehicle.name, x, y, z)
+}
+
+// metodları built-in tiplere de uygulayabiliriz
+type word string
+
+// word tipine(dolayısıyla string türüne) uygulayabileceğimiz bir metod
+func (content word) write_with_space() string {
+	var result string
+	for _, c := range content {
+		result = result + string(c) + " " //c ile metindeki her bir harfi işare edebiliriz. string dönüşümüne dikkat
+	}
+	return result //geriye string içeriğinin harfleri arasına boşluk konulmuş bir içerik döndürür
 }
