@@ -11,27 +11,27 @@ import (
 	"reflect"
 )
 
-//birden fazla sabit tanımı
+//birden fazla sabit değer tanımı
 const (
 	izmir    = 35
 	istanbul = 34
 )
 
-// Uygulamanın giriş noktası
+// Uygulamanın giriş noktası her zaman main fonksiyonudur(entry point)
 func main() {
 	fmt.Println("Merhaba. Benim adım Gopher!\nŞimdi temel tipleri görelim.")
 	fmt.Println("Şu an\t", izmir, "\tplakalı bir ilden yazıyorum")
 	var x, y int //önce değişken adı sonra tipi
 	x = 4
 	y = x + 8
-	z := x + y //dinamik değişken ataması
+	z := x + y //dinamik değişken ataması. z'nin tipini belirtmeden atadık.
 	fmt.Println("Sayıların toplamı", z)
 
 	var cap float32 = 3.89
 	var alan = 3.14 * ((cap / 2) * (cap / 2))
 	fmt.Println("Dairenin alanı", alan)
 
-	var ad string = "jan\tclaud\n"
+	var ad string = "jan\tclaud\n" //kaçış karakterlerinin kullanımı
 	var soyad string = "van\tdam"
 	fmt.Println(ad + soyad)
 
@@ -48,6 +48,6 @@ func main() {
 
 	birDeger := false
 
-	//bir değişkenin tipini anlamak için reflect kullanılabilir
+	//bir değişkenin tipini anlamak için reflect paketinin TypeOf fonksiyonu kullanılabilir
 	fmt.Println(reflect.TypeOf(pi), reflect.TypeOf(birDeger))
 }
