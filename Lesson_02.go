@@ -1,8 +1,7 @@
 /*
 	Lesson_02
 	Temel for kullanımı
-	if kullanımı
-	switch case kullanımı
+	if ve switch case kullanımı
 */
 package main
 
@@ -10,7 +9,7 @@ import (
 	"fmt"
 )
 
-// Go dilinden sadece for döngüsü vardır :)
+// Go dilinde sadece for döngüsü varmış biliyor muydunuz? :)
 func main() {
 	//1 ile 100 arasındaki sayılardan iki ile bölünebilenlerin toplamı
 	toplam := 0
@@ -33,7 +32,7 @@ func main() {
 	}
 	fmt.Println("3 ile bölünebilenlerin toplamı", toplam)
 
-	//sonsuz döngü
+	//sonsuz döngü kurmak istersek bu şekilde
 	//for {
 
 	//}
