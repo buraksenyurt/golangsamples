@@ -7,7 +7,7 @@ gibi ilerlenebilir.
 İşleri kolaylaştırmak adına LiteIDE kullanılabilir. İşleri kolaylaştıracaktır.
 
 GO diline çalışırken kullandığım kaynaklar genel hatları ile şöyle.
-Murat Özalp'in Go Programlama Kitabı
+Murat Özalp'in Go Programlama Kitabı<br/>
 https://gobyexample.com/ sitesi
 https://golang.org/pkg/ paketler ve içerikleri hakkında bilgiler için
 https://golangbot.com/learn-golang-series/ deki Tutorial serisi
