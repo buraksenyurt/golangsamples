@@ -40,6 +40,9 @@ func main() {
 	} else {
 		fmt.Printf("Dosya oluşturulurken hata oluştu\n\t%s\n", err.Error())
 	}
+
+	count := dir("C:\\Go Works\\Samples\\book\\20")
+	fmt.Println(count, "dosya bulundu")
 }
 
 type Player struct {
@@ -103,4 +106,23 @@ func writeFileStats(file string) {
 	} else {
 		fmt.Printf("Dosyayı açamadım dostum\n\t%s\n", err.Error())
 	}
+}
+
+//bir klasör içeriğini gösterelim
+func dir(path string) int {
+	directory, err := os.Open(path)
+	var fileCount int = 0
+	if err == nil {
+		defer directory.Close()
+		files, _ := directory.Readdir(-1)
+		for _, f := range files {
+			if !f.IsDir() {
+				fmt.Printf("%s\t\t%d\t%s\n", f.Name(), f.Size(), f.ModTime())
+				fileCount++
+			}
+		}
+	} else {
+		fmt.Printf("Klasör okumada sorun oluştu\n\t%s\n", err.Error())
+	}
+	return fileCount
 }
