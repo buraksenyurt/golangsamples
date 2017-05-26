@@ -17,7 +17,7 @@ GO diline çalışırken kullandığım kaynaklar aşağıdaki gibidir.
 
 Murat Özalp'in Go Programlama Kitabı
 
-[Go By Example - Örneklerle Go](https://gobyexample.com/ sitesi)
+[Go By Example - Örneklerle Go](https://gobyexample.com)
 
 [Golang Official Pakages-Paketler ile ilgili bilgiler](https://golang.org/pkg/)
 
