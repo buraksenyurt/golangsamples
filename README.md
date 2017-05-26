@@ -1,12 +1,28 @@
 # golangsamples
-Çalıştığım kitaplardan uyguladığım GO kod örneklerini içerir.
-Örnek kod dosyalarını indirdikten sonra go derleyicisi ile çalıştırmak gerekir.
-Sistemde Go yüklü olduğunu varsayarsak go run Lesson_01.go gibi ilerlenebilir.
-İşleri kolaylaştırmak adına LiteIDE kullanılabilir. Ancak dikkat edilmesi gereken bir konu var. Tüm dersler içerisinde main fonksiyonu var. Bu nedenle tüm dosyaları aynı klasöre indirirsek LiteIDE o klasörde birden fazla main fonksiyonu göreceği için hata verecektir. Bu nedenle aynı klasöre indirirseniz komut satırından da çalıştırıp sonuçları görebilirsiniz.
 
-GO diline çalışırken kullandığım kaynaklar genel hatları ile şöyle.
-Murat Özalp'in Go Programlama Kitabı<br/>
-https://gobyexample.com/ sitesi
-https://golang.org/pkg/ paketler ve içerikleri hakkında bilgiler için
-https://golangbot.com/learn-golang-series/ deki Tutorial serisi
-http://www.buraksenyurt.com/category/GoLang Kendi bloğuma eklediğim yazılar
+# Kodların Amacı
+Çalıştığım kitaplardan uyguladığım GO kod örneklerini içerir. Birinci dersten itibaren başlandığı takdirde orta seviyede GO bilgisine sahip olununcaya kadar ilerlenebilir. Yeni dersleri fırsat buldukça eklemekteyim.
+
+# Çalıştırırken
+
+Örnek kod dosyalarını indirdikten sonra go derleyicisi ile çalıştırmak gerekiyor. Sistemde Go yüklü olduğunu varsayarsak 
+
+```bash
+go run Lesson_01.go 
+```
+
+gibi ilerlenebilir. İşleri kolaylaştırmak adına LiteIDE kullanılabilir. Ancak dikkat edilmesi gereken bir konu var. Tüm ders kodları içerisinde main fonksiyonu bulunuyor. Bu nedenle tüm dosyaları aynı klasöre indirirsek LiteIDE o klasörde birden fazla main fonksiyonu göreceği için hata verecektir. Dolayısıyla aynı klasöre indirirseniz komut satırından çalıştırıp sonuçları görebilirsiniz. Ya da tüm dersleri kendi özerk klasörleri içerisinde ayrıca tutabilirsiniz.
+
+# Kaynaklar
+
+GO diline çalışırken kullandığım kaynaklar aşağıdaki gibidir. 
+
+Murat Özalp'in Go Programlama Kitabı
+
+[Go By Example - Örneklerle Go](https://gobyexample.com/ sitesi)
+
+[Golang Official Pakages-Paketler ile ilgili bilgiler](https://golang.org/pkg/)
+
+[Bir Tutorial Serisiz](https://golangbot.com/learn-golang-series/)
+
+[Kendi bloğumdaki bir kaç yazı](http://www.buraksenyurt.com/category/GoLang)
