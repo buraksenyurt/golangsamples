@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Gold Players</title>
+	<link rel="stylesheet" href="/common.css">
+</head>
+<body>
+	<h1>Gold Players</h1>
+	<table class="gridtable" align="center">
+		<tr>
+			<th>Id</th>
+			<th>Player No</th>
+			<th>Nickname</th>
+			<th>Level</th>
+		</tr>
+		<!-- burada Go tarafından gelen Players slice'ı için eşleştirme yapılıyor 
+			Bu eşleştirmede döngü kullanıyoruz.
+			süslü parantez ve nokta kullanımlarına dikkat edelim
+		-->
+		{{ range $index,$player := . }}
+			<tr>
+				<td>{{$index}}</td>
+				<td>{{$player.Id}}</td>
+				<td>{{$player.Nickname}}</td>
+				<td>{{$player.Level}}</td>
+			</tr>
+		{{end}} <!--Döngü burada sonlanıyor-->
+	</table>
+	<br/>
+	<a href="/">Go Back</a>
+</body>
