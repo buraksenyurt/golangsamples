@@ -1,0 +1,9 @@
+body{
+	border:3px solid brown;
+	border-radius: 20px;
+	border-width: 5px;
+	text-align: center;
+	width: 400px;
+	height: 500px;
+	margin: auto;
+}
