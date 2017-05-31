@@ -1,0 +1,12 @@
+body{
+	border:3px solid #BA4A00;
+	border-radius: 16px;
+	border-width: 10px;
+	text-align: center;
+	width: 420px;
+	height: 500px;
+	margin: auto;
+	font-family:Tahoma, sans-serif;
+	font-size:18px;
+	color:#212F3D;
+}
