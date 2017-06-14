@@ -1,0 +1,25 @@
+syntax="proto3";
+package Southwind;
+
+enum PlayerType{
+	SEMI=0;
+	PRO=1;
+	MASTER=2;
+}
+	
+message Player{
+	string nickName=1;
+	int32 playerId=2;
+	PlayerType type=3;
+	
+	message Weapon{
+		string name=4;
+		string ability=5;
+	}
+	
+	repeated Weapon weapons=6;
+}
+
+message Game{
+	repeated Player player=1;
+}
