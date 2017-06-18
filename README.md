@@ -21,6 +21,6 @@ Murat Özalp'in Go Programlama Kitabı
 
 [Golang Official Pakages-Paketler ile ilgili bilgiler](https://golang.org/pkg/)
 
-[Bir Tutorial Serisiz](https://golangbot.com/learn-golang-series/)
+[Bir Tutorial Serisi](https://golangbot.com/learn-golang-series/)
 
 [Kendi bloğumdaki bir kaç yazı](http://www.buraksenyurt.com/category/GoLang)
